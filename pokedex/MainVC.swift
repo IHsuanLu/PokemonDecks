@@ -19,7 +19,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     
     var pokemons = [Pokemon]()
-    var pokemonIsSearching = [Pokemon]()
+    var pokemonIsSearching = [Pokemon]() 
 
     var whetherInSearchMode:Bool = false //by default
     
@@ -58,7 +58,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
                 poke = pokemons[indexPath.row]
             }
             
-            cell.configureCell(poke)
+            cell.configureCell(poke) 
             
             return cell
         } else {
@@ -125,7 +125,6 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
             //try後面不一定是{}，也是可是這樣，順邊assign
             let csv = try CSV(contentsOfURL: path)
             let rows = csv.rows
-            print(rows)
             
             //確定有取到csv的值，拿我們要的
             for row in rows{

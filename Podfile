@@ -1,6 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '10.12'
+platform :ios, '10.3'
 
 target 'pokedex' do
 pod 'Alamofire',

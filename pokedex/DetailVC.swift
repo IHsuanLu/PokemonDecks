@@ -23,9 +23,9 @@ class DetailVC: UIViewController {
     @IBOutlet weak var descriptionLbl: UILabel!
     
     @IBOutlet weak var typeLbl: UILabel!
-    @IBOutlet weak var defenseLbl: UILabel!
+    @IBOutlet weak var expLbl: UILabel!
     @IBOutlet weak var heightLbl: UILabel!
-    @IBOutlet weak var attackLbl: UILabel!
+    @IBOutlet weak var abilityLbl: UILabel!
     @IBOutlet weak var weightLbl: UILabel!
     @IBOutlet weak var idLbl: UILabel!
     
@@ -70,8 +70,8 @@ class DetailVC: UIViewController {
         descriptionLbl.text = pokeobj.description
         PokeImg.image = UIImage(named: "\(pokeobj.id)")
         
-        defenseLbl.text = pokeobj.defense
-        attackLbl.text = pokeobj.attack
+        expLbl.text = pokeobj.baseExp
+        abilityLbl.text = pokeobj.ability
         heightLbl.text = pokeobj.height
         weightLbl.text = pokeobj.weight
         idLbl.text = "\(pokeobj.id)"
